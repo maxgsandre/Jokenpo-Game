@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://picsum.photos/1600/900?random=1") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    width: 400px; /* Aumentei o tamanho da caixa */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Aumentei a distância entre os botões */
+    margin: 20px 0;
+}
+
+button {
+    padding: 15px;
+    font-size: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#rock {
+    background-color: #a200ff;
+}
+
+#paper {
+    background-color: #9ee01a;
+}
+
+#scissors {
+    background-color: #7dbeed;
+}
+
+.result {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.reset {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+}
+
+.reset:hover {
+    background-color: #c0392b;
+}
+
+.win {
+    color: green;
+}
+
+.lose {
+    color: red;
+}
+
+.draw {
+    color: blue;
+}
